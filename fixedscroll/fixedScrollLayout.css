@@ -1,0 +1,17 @@
+/**
+ * Copyright 2013,Emma L. Baumstarck
+ * Adapted from http://www.codrops.com
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * Copyright 2013,Codrops
+ * http://www.codrops.com
+ */
+*,*:after,*:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.contentwrap{-webkit-box-shadow:rgba(0,0,0,0.4) 0px 4px 4px 0px;background-color:rgba(255,255,255,0.72);box-shadow:rgba(0,0,0,0.4) 0px 4px 4px 0px;color:rgb(0,44,62);display:block;font-family:proxima-nova,'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:1em;line-height:21px;max-width:40%;zoom:1;display:inline-block;border-radius:1.25em;}
+.content{padding:0 5%;}
+.content a:active,.content a:link,.content a:visited{color:#404;text-decoration:none;}
+.content a:hover{color:purple;text-decoration:underline;}
+html,body,.container,.scroller,.scroller section{height:100%;font-size:1em;padding:0;margin:0;}
+.scroller > section{display:table;width:100%;}
+.scroller section{position:relative;background-position:top center;background-repeat:no-repeat;background-size:cover;background-attachment:fixed;}
+.sectionwrap{display:table-cell;vertical-align:middle;text-align:center;}

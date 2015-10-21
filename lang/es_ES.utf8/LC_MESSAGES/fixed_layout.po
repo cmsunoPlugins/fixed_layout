@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CmsUno\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-21 23:27+0100\n"
+"PO-Revision-Date: 2015-10-21 23:27+0100\n"
+"Last-Translator: jacques Malgrange <contacter@boiteasite.fr>\n"
+"Language-Team: Jacques Malgrange <contacter@boiteasite.fr>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Report-\tmsgstr-Bugs-To: \n"
+"Report-\t\tmsgstr-Bugs-To: \n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-SearchPath-0: ../../..\n"
+
+#: ../../../fixed_layout.php:20
+msgid "Fixed Layout"
+msgstr "Fixed Layout"
+
+#: ../../../fixed_layout.php:21
+msgid "This plugin allows to create a page with a fixed background that changes with scrolling. (JQuery Required)"
+msgstr "Este plugin permite crear una página con un fondo fijo que cambia con el desplazamiento. (JQuery Obligatorio)"
+
+#: ../../../fixed_layout.php:22
+msgid "Just install the shortcode "
+msgstr "Sólo tiene que instalar el código corto"
+
+#: ../../../fixed_layout.php:22
+msgid "after BODY in your template (try to see the best place)."
+msgstr "después BODY en su plantilla (tratar de ver el mejor lugar)."
+
+#: ../../../fixed_layout.php:23
+msgid "The pictures should have the same dimensions otherwise the CSS will be adapted."
+msgstr "Las imágenes deben tener las mismas dimensiones de lo contrario la CSS se adaptará."
+
+#: ../../../fixed_layout.php:24
+msgid "Layout :"
+msgstr "Fondo :"
+
+#: ../../../fixed_layout.php:28
+msgid "Menu calibration"
+msgstr "Calibración de menú"
+
+#: ../../../fixed_layout.php:30
+msgid "Vertical calibration in the page after clicking on the menu (px)."
+msgstr "Desplazamiento vertical de la página después de hacer clic en el menú (px)."
+
+#: ../../../fixed_layout.php:35
+msgid "Save settings"
+msgstr "Guardar ajustes"
+
+#: ../../../fixed_layout.php:35
+msgid "Save"
+msgstr "Guardar"
+
+#: ../../../fixed_layout.php:65
+msgid "Backup performed"
+msgstr "Copia de seguridad realizada"
+
+#: ../../../fixed_layout.php:66
+msgid "Impossible backup"
+msgstr "Copia de seguridad Imposible"
+

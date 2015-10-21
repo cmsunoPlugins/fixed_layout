@@ -1,0 +1,2 @@
+#layout td{vertical-align:middle;padding:5px 8px;}
+#layout td:nth-child(1){text-transform:capitalize;}
