@@ -35,3 +35,4 @@
 		}
 	};
 })(jQuery);
+jQuery(document).ready(function(){window.scrollTo(0,1);}); // fix bug with Chrome

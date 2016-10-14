@@ -17,22 +17,22 @@ if (isset($_POST['action']))
 		<link rel="stylesheet" type="text/css" media="screen" href="uno/plugins/fixed_layout/fixed_layout.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="uno/plugins/fixed_layout/spectrum/spectrum.css" />
 		<div id="blocFixedLayout" class="blocForm">
-			<h2><?php echo _("Fixed Layout");?></h2>
-			<p><?php echo _("This plugin allows to create a page with a fixed background that changes with scrolling. (JQuery Required)");?></p>
-			<p><?php echo _("Just install the shortcode ");?>&nbsp;<code>[[fixed_layout]]</code>&nbsp;<?php echo _("after BODY in your template (try to see the best place).");?></p>
-			<p><?php echo _("The pictures should have the same dimensions otherwise the CSS will be adapted.");?></p>
-			<h3><?php echo _("Layout :");?></h3>
+			<h2><?php echo T_("Fixed Layout");?></h2>
+			<p><?php echo T_("This plugin allows to create a page with a fixed background that changes with scrolling. (JQuery Required)");?></p>
+			<p><?php echo T_("Just install the shortcode ");?>&nbsp;<code>[[fixed_layout]]</code>&nbsp;<?php echo T_("after BODY in your template (try to see the best place).");?></p>
+			<p><?php echo T_("The pictures should have the same dimensions otherwise the CSS will be adapted.");?></p>
+			<h3><?php echo T_("Layout :");?></h3>
 			<form id="frmLayout">
 				<table class="hForm">
 					<tr>
-						<td><label><?php echo _("Menu calibration");?></label></td>
+						<td><label><?php echo T_("Menu calibration");?></label></td>
 						<td><input type="text" style="width:50px;" id="fixedLayoutMenu" name="fixedLayoutMenu" value="0" /></td>
-						<td><em><?php echo _("Vertical calibration in the page after clicking on the menu (px).");?></em></td>
+						<td><em><?php echo T_("Vertical calibration in the page after clicking on the menu (px).");?></em></td>
 					</tr>
 				</table>
 				<table id="layout"></table>
 			</form>
-			<div class="bouton fr" onClick="f_save_fixedLayout();" title="<?php echo _("Save settings");?>"><?php echo _("Save");?></div>
+			<div class="bouton fr" onClick="f_save_fixedLayout();" title="<?php echo T_("Save settings");?>"><?php echo T_("Save");?></div>
 			<div class="clear"></div>
 		</div>
 		<?php break;
@@ -62,8 +62,8 @@ if (isset($_POST['action']))
 		// ********************************************************************************************
 		case 'save':
 		$out = $_POST['data'];
-		if (file_put_contents('../../data/'.$Ubusy.'/fixed_layout.json', $out)) echo _('Backup performed');
-		else echo '!'._('Impossible backup');
+		if (file_put_contents('../../data/'.$Ubusy.'/fixed_layout.json', $out)) echo T_('Backup performed');
+		else echo '!'.T_('Impossible backup');
 		break;
 		// ********************************************************************************************
 		}
