@@ -16,6 +16,9 @@ if (isset($_POST['action']))
 		case 'plugin': ?>
 		<link rel="stylesheet" type="text/css" media="screen" href="uno/plugins/fixed_layout/fixed_layout.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="uno/plugins/fixed_layout/spectrum/spectrum.css" />
+		<style>
+		.del{background:transparent url(<?php echo $_POST['udep']; ?>includes/img/close.png) no-repeat center center;cursor:pointer;padding:0 20px;margin-left:10px}
+		</style>
 		<div id="blocFixedLayout" class="blocForm">
 			<h2><?php echo T_("Fixed Layout");?></h2>
 			<p><?php echo T_("This plugin allows to create a page with a fixed background that changes with scrolling. (JQuery Required)");?></p>

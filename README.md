@@ -31,6 +31,7 @@ JQuery Required.
 
 ### Versions ###
 
+* 1.1.3 - 28/09/2022 : Remove tinyColorPicker from the plugin. Use the one from CMSUno.
 * 1.1.2 - 27/09/2022 : Responsive Display
 * 1.1.1 - 15/03/2017 : Fix issue when unknow lang
 * 1.1 - 14/10/2016 : Use PHP-Gettext in place of gettext

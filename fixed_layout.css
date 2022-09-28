@@ -2,6 +2,6 @@
 #layout td:nth-child(1){text-transform:capitalize;}
 @media screen and (max-width:780px){
 	#layout tr{display:block;margin-bottom:10px;}
-	#layout td:nth-child(1){display:block;text-align:left;font-style:italic;width:100%;}
+	#layout td:nth-child(1){display:block;width:100%;}
 	#layout td:nth-child(2){max-width:70%;}
 }

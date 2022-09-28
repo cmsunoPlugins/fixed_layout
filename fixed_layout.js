@@ -4,11 +4,10 @@
 //
 function f_load_fixedLayout(){
 	jQuery(document).ready(function(){
-		jQuery.getScript("uno/plugins/fixed_layout/tinyColorPicker/jqColorPicker.min.js");
 		jQuery.post('uno/plugins/fixed_layout/fixed_layout.php',{'action':'load','unox':Unox},function(r){var o='',data=jQuery.parseJSON(r),c=0;
 			jQuery.each(data,function(k,v){
 				if(k=='menuOffset')document.getElementById("fixedLayoutMenu").value=v;
-				else o+='<tr><td>'+k+'</td><td><select name="'+k+'Sel" onChange="f_color_fixedLayout(this,'+c+');" ><option value="color" '+(v.typ=='color'?'selected':'')+'>color</option><option value="img" '+(v.typ=='img'?'selected':'')+'>img</option></select></td><td><input type="text" id="layoutCol'+c+'" '+(v.typ=='color'?'class="co"':'onclick="f_finder_select(\'layoutCol'+c+'\')"')+' value="'+v.ref+'" /></td></tr>';
+				else o+='<tr><td>'+k+'</td><td><select name="'+k+'Sel" onChange="f_color_fixedLayout(this,'+c+');" ><option value="color" '+(v.typ=='color'?'selected':'')+'>color</option><option value="img" '+(v.typ=='img'?'selected':'')+'>img</option></select></td><td><input type="text" id="layoutCol'+c+'" '+(v.typ=='color'?'class="co"':'onclick="f_finder_select(\'layoutCol'+c+'\')"')+' value="'+v.ref+'" /><span class="del" onclick="f_del_fixedLayout(this)"></span></td></tr>';
 				++c;
 				});
 			jQuery('#layout').append(o);
@@ -38,6 +37,10 @@ function f_color_fixedLayout(f,c){var a=document.getElementById("layoutCol"+c);
 		jQuery("#layoutCol"+c+".co").colorPicker();
 	}
 	else jQuery("#layoutCol"+c).parent().empty().append('<input type="text" id="layoutCol'+c+'" onclick="f_finder_select(\'layoutCol'+c+'\')" value="" />');
+}
+//
+function f_del_fixedLayout(f){
+	jQuery(f).prev().val('').css({"background-color":"#fff","color":"#555"});
 }
 //
 f_load_fixedLayout();
